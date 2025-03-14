@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body>
+    <header>
+        <h1>Recetas</h1>
+        <input type="text" id="search" placeholder="Buscar recetas..." oninput="searchRecipes()">
+    </header>
+    
+    <div id="recipe-list">
+        <div class="recipe" data-name="Tacos" onclick="showRecipe('Tacos')">
+            <h2>Tacos</h2>
+        </div>
+        <div class="recipe" data-name="Ensalada César" onclick="showRecipe('Ensalada César')">
+            <h2>Ensalada César</h2>
+        </div>
+        <div class="recipe" data-name="Spaghetti a la Boloñesa" onclick="showRecipe('Spaghetti a la Boloñesa')">
+            <h2>Spaghetti a la Boloñesa</h2>
+        </div>
+    </div>
+    
+    <div id="recipe-detail"></div>
+    
+    <script src="base de datos.js"></script>
+</body>
+</html>
